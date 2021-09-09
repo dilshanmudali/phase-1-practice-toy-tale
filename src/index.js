@@ -116,14 +116,13 @@ function renderToys(toy){
 function createToy(e){
   e.preventDefault()
   
-  const name = document.querySelector("#name").value;
-  const img = e.target.querySelector("#image").value;
-  console.log(name,img)
+  // const name = document.querySelector("#name").value;
+  // const img = e.target.querySelector("#image").value;
   console.log(e)
   newtoy = {
     // id: ,
-    name:name,
-    image:img,
+    name:e.target["name"].value,
+    image:e.target["image"].value,
     likes: 1
   }
 
